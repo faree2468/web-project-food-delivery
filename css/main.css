@@ -114,6 +114,113 @@ nav {
 .divider {
 
     margin-top: 9rem;
-    margin-bottom: 1.5rem;
+    
+
+}
+
+.img-section {
+
+    display: flex;
+
+}
+
+#img-4k {
+
+    object-fit: cover;
+    max-width: 55%;
+    
+
+}
+
+.text-section {
+
+    width: 1000px;
+    margin-top: 300px;
+}
+
+.text-img {
+
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#add-restaurant {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    
+
+}
+
+#add-restaurant:hover {
+
+    text-decoration: underline;
+
+}
+
+.categories {
+
+    margin-top: 45px;
+    background-color: rgb(233, 231, 231);
+    padding-bottom: 50px;
+
+}
+
+.categories p {
+
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+    
+    
+
+}
+
+.category-items {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+
+    width: 115px;
+    height: 115px;
+    border: 1px solid black;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.item:hover {
+
+    border-color: grey;
+    cursor: pointer;
+    box-shadow: 0 0 10px #557fa1;
+    
+
+}
+
+.item img {
+
+    
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    margin: 2px 0 8px 0;
+
+}
+
+.category-items .item {
+
+    margin: 0px 25px;
 
 }
