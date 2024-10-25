@@ -150,7 +150,6 @@ nav {
     text-decoration: none;
     cursor: pointer;
     color: black;
-    display: block;
     margin-top: 15px;
     font-size: 20px;
     
@@ -283,13 +282,112 @@ nav {
     margin-top: 15px;
     background-color: grey;
     padding: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+
 
 }
 
+.footer-more-info {
+
+    margin-right: 30px;
+
+}
+
+.footer-join-us {
+
+    margin-right: 30px;
+
+}
+
+.footer-more-info a {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.footer-join-us a {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.footer-more-info a:hover {
+
+    text-decoration: underline;
+
+}
+
+.footer-join-us a:hover {
+
+    text-decoration: underline;
+}
+
+
+.download-app {
+
+    width: 450px;
+    
+
+}
 
 #appstore {
 
-    width: 800px;
-    height: 800px;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+#google-play {
+
+    width: 200px;
+    height: 65px;
+    cursor: pointer;
+
+}
+
+#customer-support-button {
+
+    margin-bottom: 15px;
+
+}
+
+#facebook {
+
+    
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+#fb {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+#ig {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+#instagram {
+
+    font-size: 50px;
+    margin-left: 15px;
+
+}
+
+#copyright {
+
+    margin-top: 25px;
+    font-size: 15px;
 
 }
