@@ -30,7 +30,7 @@
 
 }
 
-#register-button {
+#login-button {
 
     padding: 12px 25px;
     border: 1px solid black;
@@ -50,20 +50,20 @@
 
 }
 
-#sign-in {
+#sign-up {
 
     text-decoration: none;
     color: #636262;
 
 }
 
-#sign-in:hover{
+#sign-up:hover{
 
     color: black;
 
 }
 
-#sign-up-text {
+#sign-in-text {
 
     font-weight: 700;
     text-decoration: underline;
@@ -76,13 +76,41 @@
 
 }
 
-#register-image {
+#login-image {
 
     height: 100%;
     width: 100%;
 
 }
 
+
+#forgot-pass {
+
+    text-decoration: none;
+    color: rgb(104, 104, 236);
+    font-weight: 700;
+
+}
+
+#forgot-pass:hover {
+
+    color:rgb(60, 60, 216);
+
+}
+
+.cool-line {
+
+    background-color: rgb(187, 185, 185);
+    border-radius: 12px;
+    height: 2px;
+    width: 185px;
+    margin-top: 25px;
+    display: inline-block;
+    
+    
+    
+
+}
 
 
 
