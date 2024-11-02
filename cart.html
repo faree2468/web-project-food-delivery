@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <a id="nav-home" href="main.html">Hung.ry</a>
+
+        <span class="nav-section">
+            <a id="nav-about" href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;About us</a>
+            <a id="nav-login" href="login.html"><button id="login" role="button"><i class="fa-solid fa-user"></i>Login</button></a>
+            <a id="nav-register" href="register.html"><button id="register" role="button"><i class="fa-solid fa-user"></i>Register</button></a>
+        </span>
+    </nav>
+    <div class="cart">
+        <h2 class="cart-text">Your <span style="color: grey">Cart</span></h2>
+        <span class="cool-line"></span>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-1" src="images/greek_salad.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Greek salad</p>
+                            <p class="cart-desc">Fresh greek salad, natural ingredients</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>10.49</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-2" src="images/cola.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Cola</p>
+                            <p class="cart-desc">Refreshing drink, 150ml x 12 packs</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>6.78</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-3" src="images/hamburger.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Burger</p>
+                            <p class="cart-desc">Burger from McDonalds, ingredients</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>7.32</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="cool-line"></span>
+    <div class="final-section">
+        <div class="coupon">
+            <form action="#" method="GET">
+                <input id="coupon" type="text" name="coupon" id="coupon" placeholder="Coupon Code">
+                <button class="coupon-submit" type="submit">Apply coupon <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="cart-total">
+            <p class="total-title">Cart Total</p>
+            <div class="subtotal-price">
+                <p class="subtotal">Subtotal: </p>
+                <p class="subtotal-p">$24.59</p>
+            </div>
+            <div class="total-price">
+                <p class="total">Total: </p>
+                <p class="total-p">$24.59</p>
+
+            </div>
+            <button class="checkout-button" type="submit">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/d4f63cd63f.js" crossorigin="anonymous"></script>
+</body>
+</html>
