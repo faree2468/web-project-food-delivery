@@ -248,6 +248,26 @@ nav {
     border: 1px solid black;
     border-radius: 16px;
     cursor: pointer;
-    width: 450px;
+    width: 100%;
+
+}
+
+@media (max-width: 992px) {
+
+    .cart-desc {
+
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .cart-total {
+
+        width: 225px;
+
+    }
 
 }
