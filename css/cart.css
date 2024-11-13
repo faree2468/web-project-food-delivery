@@ -92,7 +92,8 @@ nav {
 .cart-item {
 
     background-color: lightgrey;
-    width: 50%;
+    width: 80%;
+    height: auto;
     height: 125px;
     
     
@@ -108,7 +109,7 @@ nav {
 
 .info {
 
-    width: 85%;
+    width: 75%;
     height: 100%;
     background-color: lightgrey;
     display: flex;
@@ -118,9 +119,11 @@ nav {
 
 }
 
+
+
 .remove {
 
-    width: 15%;
+    width: 25%;
     height: 100%;
     background-color: white;
     display: flex;
@@ -264,10 +267,33 @@ nav {
 
 @media (max-width: 768px) {
 
-    .cart-total {
-
-        width: 225px;
-
+    .cart-item {
+        width: 90%;
     }
 
+    .cart-item-content {
+        flex-direction: column;
+        
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .more-info {
+        padding: 5px;
+    }
+
+    .remove {
+        width: 100%;
+        justify-content: center;
+        color: rgb(241, 153, 153);
+    }
+
+    .remove i {
+        font-size: 1.3rem;
+    }
 }
+
