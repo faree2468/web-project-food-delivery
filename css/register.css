@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+#form-text {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;    
+
+}
+
+.input-fields {
+
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    width: 100%;
+    
+
+}
+
+#register-button {
+
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.form-rounded {
+
+    padding: 15px 25px;
+    border-radius: 16px;
+    border: 1px solid black;
+    
+
+}
+
+#sign-in {
+
+    text-decoration: none;
+    color: #636262;
+
+}
+
+#sign-in:hover{
+
+    color: black;
+
+}
+
+#sign-up-text {
+
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+.img-column {
+
+    height: 100vh;
+
+}
+
+#register-image {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .img-column {
+
+        display: none;
+
+    }
+
+}

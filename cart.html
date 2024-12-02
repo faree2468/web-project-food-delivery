@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <a id="nav-home" href="main.html">Hung.ry</a>
+
+        <span class="nav-section">
+            <a id="nav-about" href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;About us</a>
+            <a id="nav-login" href="login.html"><button id="login" role="button"><i class="fa-solid fa-user"></i>Login</button></a>
+            <a id="nav-register" href="register.html"><button id="register" role="button"><i class="fa-solid fa-user"></i>Register</button></a>
+        </span>
+    </nav>
+    <div class="cart">
+        <h2 class="cart-text">Your <span style="color: grey">Cart</span></h2>
+        <span class="cool-line"></span>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-1" src="images/greek_salad.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Greek salad</p>
+                            <p class="cart-desc">Fresh greek salad, natural ingredients</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>10.49</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-2" src="images/cola.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Cola</p>
+                            <p class="cart-desc">Refreshing drink, 150ml x 12 packs</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>6.78</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-content">
+                    <div class="info">
+                        <img id="cart-item-3" src="images/hamburger.png" alt="greek salad">
+                        <div class="more-info">
+                            <p class="cart-name">Burger</p>
+                            <p class="cart-desc">Burger from McDonalds, ingredients</p>
+                        </div>
+                        <p class="price"><span style="color: yellow">$</span>7.32</p>
+                    </div>
+                    <div class="remove"><i id="remove" class="fa-solid fa-trash-can"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="cool-line"></span>
+    <div class="final-section">
+        <div class="coupon">
+            <form action="#" method="GET">
+                <input id="coupon" type="text" name="coupon" id="coupon" placeholder="Coupon Code">
+                <button class="coupon-submit" type="submit">Apply coupon <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="cart-total">
+            <p class="total-title">Cart Total</p>
+            <div class="subtotal-price">
+                <p class="subtotal">Subtotal: </p>
+                <p class="subtotal-p">$24.59</p>
+            </div>
+            <div class="total-price">
+                <p class="total">Total: </p>
+                <p class="total-p">$24.59</p>
+
+            </div>
+            <button id="check-btn" class="checkout-button" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></button>
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Whoops</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-danger">
+                    Server error 500
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/d4f63cd63f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-home {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+
+#nav-about {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#nav-cart {
+
+    
+    color: black;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#register {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+#register i {
+
+    margin-right: 7px;
+
+}
+
+.nav-section a {
+
+    margin-right: 10px;
+
+}
+
+
+
+
+.container {
+
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 7rem;
+
+}
+
+#text-above-search {
+
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 4rem;
+
+}
+
+.search-food {
+
+    text-align: center;
+
+}
+
+#search-address {
+
+    width: 25rem;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#search-location {
+
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.divider {
+
+    margin-top: 9rem;
+    
+
+}
+
+.img-section {
+
+    display: flex;
+
+}
+
+#high-quality-image{
+
+    object-fit: cover;
+    max-width: 55%;
+    
+
+}
+
+.text-section {
+
+    width: 1000px;
+    margin-top: 300px;
+}
+
+.text-img {
+
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#add-restaurant {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    margin-top: 15px;
+    font-size: 20px;
+    
+
+}
+
+#add-restaurant:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+
+.categories {
+
+    margin-top: 45px;
+    background-color: rgb(233, 231, 231);
+    padding-bottom: 50px;
+
+}
+
+.categories p {
+
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+    
+    
+
+}
+
+.category-items {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+
+    width: 115px;
+    height: 115px;
+    border: 1px solid black;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.item:hover {
+
+    border-color: grey;
+    cursor: pointer;
+    box-shadow: 0 0 10px #557fa1;
+    
+
+}
+
+.item img {
+
+    
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    margin: 2px 0 8px 0;
+
+}
+
+.category-items .item {
+
+    margin: 0px 25px;
+
+}
+
+.become-a-part-section {
+
+    margin-top: 75px;
+
+}
+
+#part-section-text {
+
+    text-align: center;
+    font-size: 40px;
+
+}
+
+#part-under-section-text {
+
+    margin: 15px 0;
+    color: #6b6e79;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.cool-line {
+
+    background-color: black;
+    border-radius: 12px;
+    height: 4px;
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+    
+    
+
+}
+
+.rowww {
+
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+
+}
+
+.part-of-buttons {
+
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.the-end {
+
+    margin-top: 15px;
+    background-color: grey;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.footer-more-info {
+
+    margin-right: 30px;
+
+}
+
+.footer-join-us {
+
+    margin-right: 30px;
+
+}
+
+.footer-more-info a {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.footer-join-us a {
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.footer-more-info a:hover {
+
+    text-decoration: underline;
+
+}
+
+.footer-join-us a:hover {
+
+    text-decoration: underline;
+}
+
+
+.download-app {
+
+    width: 450px;
+    
+
+}
+
+#appstore {
+
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+#google-play {
+
+    width: 200px;
+    height: 65px;
+    cursor: pointer;
+
+}
+
+#customer-support-button {
+
+    margin-bottom: 15px;
+
+}
+
+#facebook {
+
+    
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+#fb {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+#ig {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+#instagram {
+
+    font-size: 50px;
+    margin-left: 15px;
+
+}
+
+#copyright {
+
+    margin-top: 25px;
+    font-size: 15px;
+
+}
+
+/* Major breakpoints are 600px, 768px, 992px, 1200px */
+
+@media (max-width: 1200px) {
+
+
+
+    .text-section {
+
+        margin-top: 125px;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .category-items {
+
+        flex-direction: column;
+
+    }
+
+    .category-items .item {
+
+        margin: 25px 0px;
+    
+    }    
+
+}
+
+@media (max-width: 768px) {
+
+    #search-address {
+
+        margin-bottom: 10px;
+
+    }
+
+    .text-section {
+
+        margin-top: 50px;
+
+    }
+
+    .the-end {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-more-info,
+    .footer-join-us {
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+
+    .footer-customer-support {
+
+        text-align: center;
+
+    }
+
+    .download-app {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #appstore,
+    #google-play {
+        width: 150px;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    #facebook,
+    #instagram {
+        font-size: 35px;
+        margin: 0 10px;
+    }
+
+    #copyright {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    #nav-home {
+
+        font-size: 1.5rem;
+
+    }
+
+    #nav-about {
+
+        font-size: 10px;
+
+    }
+
+    #nav-cart {
+
+        font-size: 10px;
+
+    }
+
+    #register {
+
+        font-size: 10px;
+
+    }
+
+    #search-address {
+
+        margin-bottom: 10px;
+
+    }
+
+
+}
