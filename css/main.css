@@ -47,6 +47,50 @@ nav {
 
 }
 
+#nav-switchthemes {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#nav-switchthemes i {
+
+    font-size: 20px;
+
+}
+
+.dark-mode {
+
+    background-color: rgb(31, 28, 28);
+    color: white
+
+}
+
+.dark-mode-a {
+
+    color: white !important;
+
+}
+
+.dark-mode-btn {
+
+    background-color: rgb(31, 28, 28) !important;
+    color: white !important;
+
+}
+
+.dark-mode-span {
+
+    color: black !important;
+
+}
+
 #register {
 
     padding: 10px 25px;
