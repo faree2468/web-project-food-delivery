@@ -99,4 +99,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 btn.addEventListener("click", switchThemes)
 
-// something else
+// FAQ ACCORDION
+var ans = document.querySelectorAll(".ans1")
+var faqs = document.querySelectorAll(".faq1")
+
+faqs.forEach((item) => {
+
+    item.addEventListener("click", () => {
+
+        toggleFaq(item)
+
+    })
+
+})
+
+function toggleFaq(faq) {
+
+    var ans = faq.nextElementSibling
+
+    if (ans.style.display === "block") {
+        ans.style.display = "none";
+        
+         
+    } else {
+        
+        document.querySelectorAll(".ans1").forEach((ansItem) => {
+            ansItem.style.display = "none";
+            
+        });
+
+        ans.style.display = "block"; 
+        
+    }
+}

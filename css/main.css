@@ -327,6 +327,59 @@ nav {
 
 }
 
+#faq-title {
+
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.accordion {
+    font-family: Arial, sans-serif;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #cac5c5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+
+.faq {
+    padding: 10px;
+}
+
+.faq1 {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(94, 91, 91);
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.faq1:hover {
+    background-color: white;
+}
+
+.ans1 {
+    display: none;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: grey;
+    border: 1px solid black;
+    
+}
+
+
 .the-end {
 
     margin-top: 15px;
