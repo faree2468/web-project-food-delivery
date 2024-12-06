@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-home {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+
+#register, #login {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+#register i, #login i {
+
+    margin-right: 7px;
+
+}
+
+.nav-section a {
+
+    margin-right: 10px;
+
+}
+
+#foodsubmit {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+#foodtxt {
+
+    width: 25rem;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#foodlabel {
+
+    font-size: 25px;
+
+}
+
+.search-food {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+#search-result {
+
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+#ingredients {
+
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#ing li {
+
+    font-size: 20px;
+    
+
+}
+
+.dark-mode {
+
+    background-color: rgb(31, 28, 28);
+    color: white
+
+}
+
+.dark-mode-a {
+
+    color: white !important;
+
+}
+
+.dark-mode-btn {
+
+    background-color: rgb(31, 28, 28) !important;
+    color: white !important;
+
+}
+
+.dark-mode-span {
+
+    color: black !important;
+
+}
