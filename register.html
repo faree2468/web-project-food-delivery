@@ -17,11 +17,13 @@
             <div class="d-flex justify-content-center align-items-center">
                 <div class="form-rounded w-50 p-4">
                     <h4 id="sign-up-text" class="my-5">Sign up</h4>
-                    <form action="#" method="POST">
+                    <form id="myForm" action="#" method="POST">
                         <input class="input-fields" placeholder="Name" type="text" name="fname" id="fname"><br>
-                        <input class="input-fields mt-4" placeholder="Email" type="text" name="lname" id="lname"> <br>
+                        <input class="input-fields mt-4" placeholder="Email" type="email" name="lname" id="lname"> <br>
                         <input class="input-fields mt-4" placeholder="Telephone" type="text" name="tel" id="tel"> <br>
+                        <span class="error-message" id="telError">Tel must contain only digits</span>
                         <input class="input-fields mt-4" placeholder="Password" type="password" name="pass" id="pass" ><br>
+                        <span class="error-message" id="passwordError">Pass is not 9 chars or missing letter and number</span>
                         <button class="mt-4" type="submit" id="register-button">Sign up</button>
                         <div class="text-center mt-5"><p>Have an account?&nbsp;<a id="sign-in" href="login.html">Sign in</a></p></div>
                     </form>

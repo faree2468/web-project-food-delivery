@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-home {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+
+#nav-about {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#register, #login {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+#register i, #login i {
+
+    margin-right: 7px;
+
+}
+
+
+.nav-section a {
+
+    margin-right: 10px;
+
+}
+
+.dark-mode {
+
+    background-color: rgb(31, 28, 28);
+    color: white
+
+}
+
+.dark-mode-a {
+
+    color: white !important;
+
+}
+
+.dark-mode-btn {
+
+    background-color: rgb(31, 28, 28) !important;
+    color: white !important;
+
+}
+
+.dark-mode-span {
+
+    color: black !important;
+
+}
+
+.leaderboard {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#leaderboard-table, th, td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px 24px;
+
+}
+
+.edit-message {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#edit-btn {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+#name, #account-created, #total-amount {
+
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+

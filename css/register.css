@@ -108,6 +108,17 @@
 
 }
 
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.inv {
+
+    display: block;
+
+}
 
 
 

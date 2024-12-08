@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/leaderboards.css">
+    <title>Leaderboards</title>
+</head>
+<body>
+    <nav>
+        <a id="nav-home" href="main.html">Hung.ry</a>
+
+        <span class="nav-section">
+            <a id="nav-about" href="recipe.html"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Recipes</a>
+            <a id="nav-register" href="register.html"><button id="register" role="button"><i class="fa-solid fa-user"></i>Register</button></a>
+            <a id="nav-login" href="login.html"><button id="login" role="button"><i class="fa-solid fa-user"></i>Login</button></a>
+        </span>
+    </nav>
+    <h1 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Leaderboards</h1>
+    <div class="leaderboard">
+        <table id="leaderboard-table">
+            <tr>
+                <th>Name</th>
+                <th>Account created</th>
+                <th>Total amount of orders</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="edit-message">
+        <h3 style="font-size: 25px; padding-top: 5px;">Edit table:&nbsp;&nbsp;&nbsp;</h3>
+        <form action="#" id="editForm">
+            <input type="text" name="name" id="name" placeholder="(lookup by this field) Name">
+            <input type="text" name="account-created" id="account-created" placeholder="Account created">
+            <input type="text" name="total-amount" id="total-amount" placeholder="Total Amount of Orders">
+            <button id="edit-btn" type="submit">Edit&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></button>
+        </form>
+    </div>
+    
+    <script src="js/leaderboards.js"></script>
+    <script src="https://kit.fontawesome.com/d4f63cd63f.js" crossorigin="anonymous"></script>
+</body>
+</html>
