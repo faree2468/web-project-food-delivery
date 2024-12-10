@@ -121,7 +121,7 @@ nav {
 
 }
 
-#name, #account-created, #total-amount {
+#name, #account-created, #total-amount, #iid {
 
     padding: 10px 25px;
     font-size: 16px;

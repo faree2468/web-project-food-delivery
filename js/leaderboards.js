@@ -1,7 +1,16 @@
 // LEADERBOARD
 
-const table = document.getElementById("leaderboard-table")
+toastr.options = {
+    closeButton: true,
+    progressBar: true,
+    positionClass: "toast-top-right",
+    timeOut: "3000"
+};
 
+
+
+const table = document.getElementById("leaderboard-table")
+var leaderboardData
 async function getData() {
 
     try {
@@ -12,12 +21,14 @@ async function getData() {
         }
         const data = await res.json()
     
-
+        leaderboardData = data
+        id = 0
         data.forEach(person => {
             table.insertAdjacentHTML(
               "beforeend",
               `
               <tr>
+                <td>${id}</td>
                 <td>${person.name}</td>
                 <td>${person.member_since}</td>
                 <td>${person.total_amount_of_orders}</td>
@@ -25,6 +36,7 @@ async function getData() {
               </tr>
               `
             );
+            id+=1
         });
 
         addListeners()
@@ -67,6 +79,35 @@ function removeRow(btn) {
     }
 
 }
+
+const editForm = document.getElementById("editForm")
+editForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+    const idToFind = document.getElementById("iid").value.trim() // removing whitespace for id
+    const name = document.getElementById("name").value
+    const accInfo = document.getElementById("account-created").value
+    const total = document.getElementById("total-amount").value
+    
+    for (let i = 1; i < table.rows.length; i++) {
+        let row = table.rows[i]
+        let rowId = row.cells[0].textContent.trim()
+
+        
+        if (rowId === idToFind) {
+            
+            row.cells[1].textContent = name
+            row.cells[2].textContent = accInfo
+            row.cells[3].textContent = total
+            toastr.success(`ID: ${idToFind} is updated!`)
+            editForm.reset()
+            return
+        }
+    }
+
+    toastr.error(`No row with ID: ${idToFind}.`)
+})
+
 
 // DARK MODE
 var links = document.getElementsByTagName("a")

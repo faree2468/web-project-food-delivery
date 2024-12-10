@@ -1,3 +1,90 @@
+toastr.options = {
+    closeButton: true,
+    progressBar: true,
+    positionClass: "toast-top-right",
+    timeOut: "3000"
+};
+
+function checkPass(pass) {
+
+    if (pass.length < 9) {
+
+        return false;
+
+    }
+
+    let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+\-=<>?]{9,}$/
+
+    return regex.test(pass)
+
+}
+
+function checkTel(tel) {
+
+    let regex = /^\d+$/
+
+    return regex.test(tel)
+
+}
+
+// custom form validation
+const form = document.getElementById("myForm");
+
+const error = document.querySelector(".error-message")
+const passErr = document.getElementById("passwordError")
+const telErr = document.getElementById("telError")
+// if the password or the phone number is not valid, it won't let the user submit :)
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault()
+
+    const passwordInput = document.getElementById("pass").value;
+    const telInput = document.getElementById("tel").value;
+
+    console.log(passwordInput)
+    console.log(telInput)
+
+    if (!checkPass(passwordInput) && !checkTel(telInput)) {
+
+        event.preventDefault()
+        console.log("wrong password and tel")
+        passErr.classList.add("inv")
+        telErr.classList.add("inv")
+        form.reset()
+
+    }
+
+    else if (!checkPass(passwordInput)){
+
+        event.preventDefault()
+        console.log("wrong password")
+        passErr.classList.add("inv")
+        telErr.classList.remove("inv")
+        form.reset()
+    }
+
+    else if(!checkTel(telInput)) {
+
+        event.preventDefault()
+        console.log("wrong tel")
+        passErr.classList.remove("inv")
+        telErr.classList.add("inv")
+        form.reset()
+    }
+
+    else {
+        toastr.success(`Account succesfully created!`)
+        passErr.classList.remove("inv")
+        telErr.classList.remove("inv")
+        setTimeout(()=>form.reset(), 3000)
+    }
+
+
+
+})
+
+
+
 // DARK MODE
 // ----- REGISTER.HTML -------
 
@@ -71,78 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-// CUSTOM FORM VALIDATION
-function checkPass(pass) {
-
-    if (pass.length < 9) {
-
-        return false;
-
-    }
-
-    let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{9,}$/
-
-    return regex.test(pass)
-
-}
-
-function checkTel(tel) {
-
-    let regex = /^\d+$/
-
-    return regex.test(tel)
-
-}
-
-const form = document.getElementById("myForm");
-
-const error = document.querySelector(".error-message")
-const passErr = document.getElementById("passwordError")
-const telErr = document.getElementById("telError")
-// if the password or the phone number is not valid, it won't let the user submit :)
-form.addEventListener("submit", function(event) {
-
-    const passwordInput = document.getElementById("pass").value;
-    const telInput = document.getElementById("tel").value;
-
-    console.log(passwordInput)
-    console.log(telInput)
-
-    if (!checkPass(passwordInput) && !checkTel(telInput)) {
-
-        event.preventDefault()
-        console.log("wrong password and tel")
-        passErr.classList.add("inv")
-        telErr.classList.add("inv")
-        form.reset()
-
-    }
-
-    else if (!checkPass(passwordInput)){
-
-        event.preventDefault()
-        console.log("wrong password")
-        passErr.classList.add("inv")
-        telErr.classList.remove("inv")
-        form.reset()
-    }
-
-    else if(!checkTel(telInput)) {
-
-        event.preventDefault()
-        console.log("wrong tel")
-        passErr.classList.remove("inv")
-        telErr.classList.add("inv")
-        form.reset()
-    }
-
-    else {
-
-        console.log("everything good")
-        passErr.classList.remove("inv")
-        telErr.classList.remove("inv")
-    }
 
 
 
-})

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/leaderboards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <title>Leaderboards</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
     <div class="leaderboard">
         <table id="leaderboard-table">
             <tr>
+                <th>ID</th>
                 <th>Name</th>
                 <th>Account created</th>
                 <th>Total amount of orders</th>
@@ -31,13 +33,15 @@
     <div class="edit-message">
         <h3 style="font-size: 25px; padding-top: 5px;">Edit table:&nbsp;&nbsp;&nbsp;</h3>
         <form action="#" id="editForm">
-            <input type="text" name="name" id="name" placeholder="(lookup by this field) Name">
+            <input type="text" name="id" id="iid" placeholder="ID of the table to be edited">
+            <input type="text" name="name" id="name" placeholder="Name">
             <input type="text" name="account-created" id="account-created" placeholder="Account created">
             <input type="text" name="total-amount" id="total-amount" placeholder="Total Amount of Orders">
             <button id="edit-btn" type="submit">Edit&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></button>
         </form>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="js/leaderboards.js"></script>
     <script src="https://kit.fontawesome.com/d4f63cd63f.js" crossorigin="anonymous"></script>
 </body>
