@@ -6,6 +6,7 @@
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -129,4 +130,75 @@ nav {
     border-radius: 16px;
 
 }
+
+.gallery-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+.image-css {
+
+    margin: 25px;
+    max-width: 600px;
+    max-height: 350px;
+
+}
+
+.modal-gallery {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: none; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-gallery-img {
+    padding-top: 80px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close-gallery {
+    position: absolute;
+    top: 45px;
+    right: 55px;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close-gallery:hover,
+.close-gallery:focus {
+    color: lightcoral;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+    .modal-gallery {
+      width: 100%;
+    }
+}
+
 

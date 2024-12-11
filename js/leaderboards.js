@@ -109,6 +109,45 @@ editForm.addEventListener("submit", function(event) {
 })
 
 
+// IMAGE GALLERY
+const modal = document.getElementById("myModal")
+
+const modalImg = document.getElementById("img")
+
+
+imgs = document.querySelectorAll(".image-css")
+
+imgs.forEach((img)=>{
+
+    img.onclick = function() {
+        
+        modal.style.display = "block"
+        modalImg.src = this.src
+
+    }
+
+})
+
+const span = document.querySelector(".close-gallery")
+span.onclick = function() { 
+
+  modal.style.display = "none"
+
+}
+
+window.onclick = function(event) {
+
+    if (event.target == modal) {
+
+        modal.style.display = "none"
+
+    }
+
+}
+
+
+
+
 // DARK MODE
 var links = document.getElementsByTagName("a")
 var btns = document.getElementsByTagName("button")
