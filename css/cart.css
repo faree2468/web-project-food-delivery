@@ -38,6 +38,32 @@ nav {
 
 }
 
+.dark-mode {
+
+    background-color: rgb(31, 28, 28);
+    color: white
+
+}
+
+.dark-mode-a {
+
+    color: white !important;
+
+}
+
+.dark-mode-btn {
+
+    background-color: rgb(31, 28, 28) !important;
+    color: white !important;
+
+}
+
+.dark-mode-span {
+
+    color: black !important;
+
+}
+
 #register, #login {
 
     padding: 10px 25px;
