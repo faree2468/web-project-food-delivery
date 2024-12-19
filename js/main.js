@@ -1,5 +1,5 @@
 // DARK MODE
-// --------------- MAIN.HTML -------------------
+
 var btn = document.getElementById("nav-switchthemes")
 var iconbtn = document.getElementById("iconbtn")
 

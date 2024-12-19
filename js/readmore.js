@@ -6,7 +6,6 @@ var spans = document.getElementsByTagName("span")
 
 function darkMode() {
 
-    cart.style.background = "black"
     for (let link of links) {
             
         link.classList.add("dark-mode-a")
@@ -33,7 +32,7 @@ function darkMode() {
 
 function lightMode() {
 
-    cart.style.background = "lightgrey"
+    
     for (let link of links) {
         
         link.classList.remove("dark-mode-a")

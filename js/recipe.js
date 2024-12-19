@@ -110,3 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 })
+
+// READ MORE
+
+readmore = document.getElementById("readmore")
+
+readmore.addEventListener("click", ()=>{
+
+    
+    location.href = 'readmore.html'
+
+})

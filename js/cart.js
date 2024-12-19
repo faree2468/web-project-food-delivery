@@ -1,5 +1,4 @@
 // DARK MODE
-// ----- CART.HTML -------
 
 var links = document.getElementsByTagName("a")
 var btns = document.getElementsByTagName("button")
@@ -73,4 +72,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-// something else

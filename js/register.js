@@ -86,7 +86,7 @@ form.addEventListener("submit", function(event) {
 
 
 // DARK MODE
-// ----- REGISTER.HTML -------
+
 
 var links = document.getElementsByTagName("a")
 var btns = document.getElementsByTagName("button")
