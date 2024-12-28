@@ -47,6 +47,38 @@ nav {
 
 }
 
+#nav-readmore {
+
+    
+    color: black;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#nav-lb {
+
+    
+    color: black;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+#llogin {
+
+    color: black;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid black;
+
+}
+
 #nav-switchthemes {
 
     text-decoration: none;
