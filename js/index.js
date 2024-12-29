@@ -1,3 +1,36 @@
+$(document).ready(function(){
+    $("nav a").click(function(e){
+
+        $("nav a").removeClass("active")
+        $(this).addClass("active")
+
+    })
+
+})
+
+document.addEventListener("DOMContentLoaded", ()=>{
+
+    if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+        window.location.href="#login"
+
+    }
+
+})
+
+
+async function getData() {
+
+    const res = await fetch("data/users.json")
+    if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+    }
+    const data = await res.json()
+
+    return data
+
+}
+
 var app = $.spapp({
 
 
@@ -25,6 +58,12 @@ app.route({
     },
     onReady: function() {
 
+        if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+            window.location.href="#login"
+    
+        }
+
         setTimeout(() => homepagejs(), 0);
     }
 
@@ -36,6 +75,12 @@ app.route({
     load:"recipe.html",
     onCreate: function() {},
     onReady: function(){
+
+        if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+            window.location.href="#login"
+    
+        }
 
         setTimeout(()=>recipejs(), 0)
 
@@ -50,6 +95,12 @@ app.route({
     onCreate: function(){console.log("Cart page created")},
     onReady: function(){
 
+        if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+            window.location.href="#login"
+    
+        }
+
         setTimeout(()=>cartjs(), 0)
 
     }
@@ -62,6 +113,13 @@ app.route({
     load:"readmore.html",
     onCreate: function(){console.log("Read more created")},
     onReady: function(){
+
+        if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+            window.location.href="#login"
+    
+        }
+
         readmorejs()
     }
 
@@ -78,7 +136,6 @@ app.route({
         const table = document.getElementById("leaderboard-table")
         var leaderboardData
         async function getData() {
-            console.log("here")
             try {
 
                 const res = await fetch("data/leaderboard.json")
@@ -121,6 +178,12 @@ app.route({
     },
     onReady: function(){
 
+        if (localStorage.getItem("user") === null && localStorage.getItem("pass") === null) {
+
+            window.location.href="#login"
+    
+        }
+
         leaderboardjs()
 
     }
@@ -134,10 +197,14 @@ app.route({
     load:"login.html",
     onCreate: function(){console.log("this is created")},
     onReady: function(){
+
+        
+
         setTimeout(()=>loginjs(), 0)
     }
 
 })
+
 
 function addListeners() {
 
@@ -369,6 +436,20 @@ function toggleFaq(faq) {
 }
 
 function homepagejs() {
+
+    // add name to homepage
+    setTimeout(()=>{
+
+        if (localStorage.getItem("user") !== null && localStorage.getItem("pass") !== null) {
+
+            document.getElementById("text-above-search").innerHTML = `<p>Hey, ${localStorage.getItem("user")} <b>Discover</b> restaurants and more near you</p>`
+
+        }
+        
+
+    }, 3000)
+
+
     // DARK MODE
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
@@ -651,6 +732,48 @@ function readmorejs() {
 }
 
 function loginjs() {
+
+    // form event listener, wait for dom to load otherwise form error
+    setTimeout(()=>wrapper(), 1000)
+
+    function wrapper(){
+
+        toastr.options = {
+            closeButton: true,
+            progressBar: true,
+            positionClass: "toast-top-right",
+            timeOut: "3000"
+        };
+
+        myform = document.getElementById("loginForm")
+        myform.addEventListener("submit", (e)=>{
+
+            correct = false
+            e.preventDefault()
+            user = document.getElementById("user").value.trim()
+            pass = document.getElementById("pass").value.trim()
+            allData = getData()
+            allData.then((data)=>{
+
+                data.forEach(el => {
+                    if (el["username"] === user && el["password"] === pass){
+                        correct = true
+                        localStorage.setItem("user", user)
+                        localStorage.setItem("pass", pass)
+                        toastr.success("Success, redirecting to home page...")
+                        setTimeout(function(){
+                            window.location.href = "#home"
+                        },3000)
+
+                    }
+                });
+                if(!correct){toastr.error("Incorrect credentials")}
+
+            })
+
+        })
+
+    }
 
     var links = document.getElementsByTagName("a")
     var btns = document.getElementsByTagName("button")
