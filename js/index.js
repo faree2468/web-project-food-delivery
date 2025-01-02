@@ -184,6 +184,8 @@ app.route({
     
         }
 
+        toastr.clear();
+
         leaderboardjs()
 
     }
@@ -231,17 +233,17 @@ function removeRow(btn) {
 
 }
 
+toastr.options = {
+    closeButton: true,
+    progressBar: true,
+    positionClass: "toast-top-right",
+    timeOut: "3000"
+};
+
 function leaderboardjs() {
 
     // LEADERBOARD
     const table = document.getElementById("leaderboard-table")
-
-    toastr.options = {
-        closeButton: true,
-        progressBar: true,
-        positionClass: "toast-top-right",
-        timeOut: "3000"
-    };
 
 
     const editForm = document.getElementById("editForm")
