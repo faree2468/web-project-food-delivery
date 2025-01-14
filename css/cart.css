@@ -64,7 +64,7 @@ nav {
 
 }
 
-#register, #login {
+#register {
 
     padding: 10px 25px;
     font-size: 16px;
@@ -75,7 +75,7 @@ nav {
 
 }
 
-#register i, #login i {
+#register i {
 
     margin-right: 7px;
 
